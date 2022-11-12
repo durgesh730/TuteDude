@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cabin+Condensed&family=Courgette&family=Fira+Sans&family=Fredoka+One&family=Inter:wght@300&family=Leckerli+One&family=Pacifico&family=Poppins:wght@500&family=Roboto&family=Roboto+Condensed&family=Rubik&family=Signika+Negative:wght@300&family=Source+Sans+Pro&family=Ubuntu:wght@300;400&family=Varela+Round&family=Yanone+Kaffeesatz&display=swap');
+.toParts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 2rem;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.sectiontp {
+    display: grid;
+}
+
+.sectiontp span{
+    font-size: 14px;
+    color:  #800080;
+}
+
+.sectiontp a{
+    padding-top: .3rem;
+    font-size: 32px;
+    color:  #800080;
+}
+
+.rupicon{
+    padding-top: .3rem;
+}
+
+.sectiontp small{
+    font-size: 32px;
+}
+
+.card{
+    padding-top: .5rem;
+    padding-bottom:2rem ;
+    text-align: center;
+    background-color: white;
+    border: none;
+    box-shadow: 10px 0px 50px 20px #edecec;
+    border-radius: 1rem;
+}
+
+.card-body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: .5rem;
+}
+
+.bottomText{
+    padding: .5rem 1rem;
+    font-size: 16px;
+    border-radius: 1rem;
+    background-color: #800080;
+}
+
+.textBottom {
+    color: white;
+}
+
+.Referral{
+  display: flex;
+    color: #800080;
+   flex-direction: column;
+   gap: .5rem;
+}
+
+.Referral small{
+    padding-left:2.5rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    
+    letter-spacing: 1.5rem;
+    border: double 2px transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top right,#800080 0%, #FF864C 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+/* ========== media query======= */
+
+@media screen and (max-width: 1024px) {
+    .toParts{
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .toParts{
+        gap: 1rem;
+    }
+    .card-body{
+        gap: .2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .toParts{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        display: block;
+    }
+    .card-body{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Referral{
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .toParts{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: block;
+    }
+    .card-body{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Referral{
+        padding-top: 2rem;
+    }
+}

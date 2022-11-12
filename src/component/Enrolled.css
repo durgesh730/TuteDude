@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cabin+Condensed&family=Courgette&family=Fira+Sans&family=Fredoka+One&family=Inter:wght@300&family=Leckerli+One&family=Pacifico&family=Poppins:wght@600&family=Roboto&family=Roboto+Condensed&family=Rubik&family=Signika+Negative:wght@300&family=Source+Sans+Pro&family=Ubuntu:wght@300;400&family=Varela+Round&family=Yanone+Kaffeesatz&display=swap');
+
+.Goback{
+    display: none;
+    color: #800080;
+}
+
+.Goback span{
+    display: block;
+    color: #800080;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.CodeBalance{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 15.5rem;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.code{
+    display: grid;
+}
+
+.code span{
+    color: #800080;
+    font-weight: 400;
+}
+
+.code a{
+    border: 2px solid rgb(178, 175, 175);
+    font-size: 14px;
+    letter-spacing: .8rem;
+    border-radius: .5rem;
+    padding: .5rem .5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.Balance{
+    padding: 1rem 1rem;
+    display: grid;
+    background-color: white;
+    box-shadow: 0px 1px 8px 0px #e8e2e2;
+    border-radius: 1rem;
+}
+
+.Balance span{
+    color: #800080;
+}
+
+.enrolledCards{
+    margin: auto;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: 'Poppins';
+    font-style: normal;
+    padding-top: 1rem;
+}
+
+.dhiraj{
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(270deg, #800080 0%, #FF864C 100%);
+}
+
+.topHeading a{
+   padding-left: 5rem;
+   font-size: 14px;
+}
+
+.topHeading span{
+    font-size: 16px;
+ }
+
+.CourseName{
+   padding-top: .5rem;
+}
+
+.CourseName a{
+     margin: .3rem;
+     font-size: 14px;
+     padding: .4rem;
+     border: 2px solid #fe9b6d;
+     border-radius: 1rem;
+}
+
+.Subject{
+    margin-top: 1.2rem;
+}
+
+.Subject a{
+    margin: .3rem;
+   font-size: 14px;
+   border: 2px solid #fd9b6e;
+   border-radius: .8rem;
+   padding: .4rem;
+}
+
+.Amount{
+    padding-top: 1rem;
+}
+
+.Amount a{
+    padding-top: 2rem;
+    padding-left: .5rem;
+    font-size: 24px;
+}
+
+.Amount span{
+    padding-top: 1rem;
+    font-size: 16px;
+}
+
+.headingFor-card{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    color: #800080;
+}
+
+.termAnd{
+    padding-top: .8rem;
+    padding-bottom: 1rem;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    color: #800080;
+} 
+
+@media screen and (max-width: 1024px){
+    .enrolledCards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .CodeBalance{
+        padding: 1rem 5rem;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    .enrolledCards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .CodeBalance{
+        padding: 1rem 3rem;
+    }
+    .termAnd{
+     padding-left: 2rem;
+    } 
+}
+
+@media screen and (max-width: 400px) {
+    .CodeBalance{
+        padding: 1rem 1rem;
+        gap: 1rem;
+    }
+    .Goback{
+        display:block;
+    }
+    .Balance{
+        padding: .8rem 1rem;
+    }
+    .Balance span{
+        color: #800080;
+    }
+    .termAnd{
+        padding-left: 0rem;
+       }
+}

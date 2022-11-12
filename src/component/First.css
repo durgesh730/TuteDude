@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cabin+Condensed&family=Courgette&family=Fira+Sans&family=Fredoka+One&family=Inter:wght@300&family=Leckerli+One&family=Pacifico&family=Poppins:wght@500&family=Roboto&family=Roboto+Condensed&family=Rubik&family=Signika+Negative:wght@300&family=Source+Sans+Pro&family=Ubuntu:wght@300;400&family=Varela+Round&family=Yanone+Kaffeesatz&display=swap');
+.line{
+    padding-left: 310px;
+    margin-top:30px;
+    left: 0px;
+    top: 73px;
+    padding-bottom: .3rem;
+    background: #FFFFFF;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.line p{
+    font-size: 14px;
+}
+
+
+/* ==================== media query ==========*/
+
+@media screen and (max-width: 1324px) {
+    .line{
+        padding-left: 200px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .line{
+        padding-left: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .line{
+        padding-left: 80px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .line{
+        padding-left: 40px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cabin+Condensed&family=Courgette&family=Fira+Sans&family=Fredoka+One&family=Inter:wght@300&family=Leckerli+One&family=Pacifico&family=Poppins&family=Roboto&family=Roboto+Condensed&family=Rubik&family=Signika+Negative:wght@300&family=Source+Sans+Pro&family=Ubuntu:wght@300;400&family=Varela+Round&family=Yanone+Kaffeesatz&display=swap');
+
+.FiveDiv{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 5rem;
+}
+
+.heading{
+    padding-top: 2rem;
+    color: #800080;
+    padding-left: 5rem;
+}
+
+.InviteText{
+    padding-left: .5rem;
+    display: grid;
+}
+
+.InviteText small{
+    color: #4D4D4D;
+    font-size: 16px;
+    width: 274px;
+}
+
+.InviteText span{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.InviteIcon{
+    padding-top: .5rem;
+}
+
+.InviteIcon span{
+    background: rgba(217, 217, 217, 0.25);
+    border-radius: 50%;
+    font-size: 27px;
+    padding-left: 1.2rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    color: #800080;
+}
+
+.heading span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size:24px;
+    font-weight: 600;
+}
+
+/* ================ media query============== */
+
+ @media screen and (max-width: 1024px) {
+   .FiveDiv{
+       padding-left: 2rem;
+   }
+   .heading{
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+    .FiveDiv{
+        padding-left: 0rem;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .heading{
+        padding-left: 0rem;
+      } 
+ }
+
+
+@media screen and (max-width: 800px) {
+    .FiveDiv{
+        margin: auto;
+        padding-left: 0rem;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .heading{
+        padding-left: 0rem;
+    }
+    .heading span{
+        padding-right: 6rem;
+        /* margin: auto; */
+    } 
+    .InviteText small{
+        width: 100%;
+    }
+} 
+
+@media screen and (max-width: 600px) {
+    .heading span{
+        padding-right: 5rem;
+        margin: auto;
+    } 
+    .InviteText small{
+        width: 274px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .InviteText small{
+        width: 250px;
+    }
+    .heading span{
+        padding-left: 1rem;
+        margin: auto;
+    } 
+}
+

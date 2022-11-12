@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cabin+Condensed&family=Courgette&family=Fira+Sans&family=Fredoka+One&family=Inter:wght@300&family=Leckerli+One&family=Pacifico&family=Poppins:wght@500&family=Roboto&family=Roboto+Condensed&family=Rubik&family=Signika+Negative:wght@300&family=Source+Sans+Pro&family=Ubuntu:wght@300;400&family=Varela+Round&family=Yanone+Kaffeesatz&display=swap');
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: .5rem;
+}
+
+.NavRight a{
+    font-family: 'Poppins';
+    font-style: normal;
+    padding-right: 1rem;
+    text-decoration: none;
+    pointer-events: none;
+    font-size: 18px;
+    line-height: 123.5%;
+}
+.textNo{
+    margin-top: .8rem;
+    color: rgba(128, 0, 128, 0.25);
+}
+
+.textNot{
+    margin-top: .8rem;
+    color: rgba(128, 0, 128, 0.25);
+}
+
+.extra{
+    margin-top: .8rem;
+    color: #800080;
+}
+.extra span{
+    padding-top: 1rem;
+}
+
+.text{
+    color: #800080;
+}
+
+/* ============= media query==================== */
+
+@media screen  and (max-width: 1024px) {
+    .textNot{
+        display: none;
+    }
+}
+
+@media screen  and (max-width: 800px){
+    .textNo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .extra a{
+        font-size: 14px;
+        color: white;
+    } 
+    .extra span{
+      display: none;
+    }
+    .extra{
+        padding-top: .5rem;
+        background-color: #800080;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+        padding-bottom: .5rem;
+    }  
+    .container{
+        padding-top: 1.5rem;
+    }
+    .container img{
+        padding-right: 1rem;
+        width: 160px;
+    }
+    .NavRight a{
+        padding-right: .3rem;
+    }
+}
+
